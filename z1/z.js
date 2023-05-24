@@ -174,3 +174,45 @@
 
 // }
 // findOddOrNot(array)
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// const pin = '123456'
+// function validatePIN (pin) {
+//     let arr = []
+//     if(pin.length == 4 || pin.length == 6){
+//         for (let i = 0; i < pin.length; i++) {
+//             if(pin[i] == Number(pin[i])){
+//                 arr.push(pin[i])
+//             }  
+//             else{
+//                 return console.log('false')
+//             }
+//         }
+//     }
+//     else{
+//         return console.log("you are stupid")
+//     }
+//     arr = arr.join('')
+//     return console.log(arr)
+//   }
+//   validatePIN(pin)
+
+///////////////////////////////////////////////////////////////////////////////////
+const string = '(){}}}[]'
+
+function validBraces(string){
+    let obj = {}
+    if(string.length % 2 != 0){
+        return console.log("false")
+    }
+    for (let i = 0; i < string.length; i++) {
+        obj[string[i]] = 1
+        
+
+        
+    }
+    return console.log(obj)
+
+}
+validBraces(string)
