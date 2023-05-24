@@ -199,7 +199,7 @@
 //   validatePIN(pin)
 
 ///////////////////////////////////////////////////////////////////////////////////
-const string = '(){}}}[]'
+const string = '(){}[]'
 
 function validBraces(string){
     let obj = {}
@@ -207,11 +207,14 @@ function validBraces(string){
         return console.log("false")
     }
     for (let i = 0; i < string.length; i++) {
-        obj[string[i]] = 1
-        
-
-        
+        if(obj.hasOwnProperty(string[i])){
+            obj[string[i]]++
+        }
+        else{
+            obj[string[i]] = 1
+        }   
     }
+    // if(obj[1] == jbj[2] && obj[3] == obj[4])
     return console.log(obj)
 
 }
