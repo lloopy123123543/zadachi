@@ -199,23 +199,59 @@
 //   validatePIN(pin)
 
 ///////////////////////////////////////////////////////////////////////////////////
-const string = '(){}[]'
+// const string = '(){}[]'
 
-function validBraces(string){
-    let obj = {}
-    if(string.length % 2 != 0){
-        return console.log("false")
-    }
-    for (let i = 0; i < string.length; i++) {
-        if(obj.hasOwnProperty(string[i])){
-            obj[string[i]]++
-        }
-        else{
-            obj[string[i]] = 1
-        }   
-    }
-    // if(obj[1] == jbj[2] && obj[3] == obj[4])
-    return console.log(obj)
+// function validBraces(string){
+//     let obj = {}
+//     if(string.length % 2 != 0){
+//         return console.log("false")
+//     }
+//     for (let i = 0; i < string.length; i++) {
+//         if(obj.hasOwnProperty(string[i])){
+//             obj[string[i]]++
+//         }
+//         else{
+//             obj[string[i]] = 1
+//         }   
+//     }
+//     // if(obj[1] == jbj[2] && obj[3] == obj[4])
+//     return console.log(obj)
 
-}
-validBraces(string)
+// }
+// validBraces(string)
+
+////////////////////////////////////////////////////////////////////////////////
+
+// const string = 'Утро чорту.';
+
+// function poli(string){
+//     let start = 0
+//     let end = string.length -1 
+//     string = string.toLowerCase()
+    
+//     for (let i = 0; i < string.length; i++) {
+//         if(string[start] == '.' || string[start] == '!' || string[start] == '?'){
+//             start ++
+//         }
+//         if(string[end] == '.' || string[end] == '!' || string[end] == '?'){
+//             end --
+//         }
+
+//         if(string[start] == ' '){
+//             start++
+//         }
+//         if(string[end] == ' '){
+//             end --
+//         }
+//         if(string[start] != string[end]){
+//             return console.log(string[start], string[end])
+
+//         }
+//         start++
+//         end --
+        
+//     }
+//     return console.log('Полиндром')
+
+// }
+// poli(string)
